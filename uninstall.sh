@@ -3,7 +3,7 @@
 Dir=$(sed -n 1p "$HOME/.TVshowLog/.location.log")		# tv_show directory
 Log_dir="$HOME/.TVshowLog" 		# Log Directory
 
-## Remove link, if any ##
+## Remove links, if any ##
 
 echo "Removing link (if any)... "
 if [ -f "$Log_dir/.install" ] && [ $(cat "$Log_dir/.install" | wc -l) -eq 2 ]; then
